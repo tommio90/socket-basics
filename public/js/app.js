@@ -17,7 +17,8 @@ socket.on('message', function(message){
     console.log('New message:');
     console.log(message.text);
 
-    $messages.append('<p> <strong>' +message.name+' :    '+date+ '</strong>    ' +message.text+ '</p>');
+    $messages.append('<p> <strong>' +message.name+' :    '+date+ '</strong> </p>');
+    $messages.append('<p>'+message.text+'</p>');
 
 });
 
